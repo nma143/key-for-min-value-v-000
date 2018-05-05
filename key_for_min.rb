@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
       if min_hash.length == 0
         min_hash = {key: value}
       end
-      if value < min_hash[key:]
+      if value < min_hash[:key]
         min_hash = {key: value}
       end
   end
