@@ -11,5 +11,8 @@ def key_for_min_value(name_hash)
         min_hash = {key: value}
       end
   end
-  return min_hash
+  min_hash.collect do |key, value|
+    key
+  end
+  
 end
